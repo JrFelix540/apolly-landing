@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Appolly Landing Page</title>
+</head>
+
+<body>
+    <header class="gradient">
+        <div class="container relative">
+            <div class="header__top">
+                <div class="header__contact">
+                    <a href="#" class="header__contact-link">
+                        <img src="/images/mail-icon.png" alt="Mail Icon">
+                        <span>Info@youremail.com</span>
+                    </a>
+                    <a href="#" class="header__contact-link">
+                        <img src="/images/phone-icon.png" alt="Phone Icon">
+                        <span>(480) 555-0103</span>
+                    </a>
+                </div>
+                <div class="header__contact">
+                    <a href="#">
+                        <img src="/images/facebook-icon.png" alt="Facebook Icon">
+                    </a>
+                    <a href="#">
+                        <img src="/images/instagram-icon.png" alt="Instagram Icon">
+                    </a>
+                    <a href="#">
+                        <img src="/images/twitter-icon.png" alt="Twitter Icon">
+                    </a>
+                    <a href="#">
+                        <img src="/images/youtube-icon.png" alt="YouTube Icon">
+                    </a>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <div class="header__nav-left">
+                    <a href="#" class="header__nav-link">Home</a>
+                    <a href="#" class="header__nav-link">About</a>
+                    <a href="#" class="header__nav-link">Features</a>
+                    <button onclick="toggleMenu('open')" class="mobile__nav-icon">
+                        <img src="/images/hamburger-icon.png" alt="hamburger icon" />
+                    </button>
+                </div>
+                <a href="/" class="logo__container">
+                    <img src="/images/logo.png" alt="Logo">
+                </a>
+                <div class="header__nav-right">
+                    <a href="#" class="header__nav-link">Screenshot</a>
+                    <a href="#" class="header__nav-link">Blog</a>
+                    <button class="button__primary">Download</button>
+
+                </div>
+            </nav>
+            <nav class="mobile__nav-list">
+                <div class="mobile__nav-close">
+                    <button onclick="toggleMenu('close')" class="close__icon">
+                        <img src="/images/close-icon.png" alt="close icon">
+                    </button>
+                </div>
+                <a href="#" class="header__nav-link">Home</a>
+                <a href="#" class="header__nav-link">About</a>
+                <a href="#" class="header__nav-link">Features</a>
+                <a href="#" class="header__nav-link">Screenshot</a>
+                <a href="" class="header__nav-link">Blog</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="gradient">
+            <div class="container hero">
+                <div class="hero__content">
+                    <div class="hero__card">
+                        <div class="hero__card-top">
+                            <h2 class="hero__title">A Great App Makes Your Life Better</h2>
+                            <p class="hero__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                                sint.
+                                Velit officia
+                                consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        </div>
+                        <div class="hero__card-bottom">
+                            <h3 class="hero__subtitle">Download App Now</h3>
+                            <div>
+                                <a href="#">
+                                    <img src="/images/google-play-download.png" alt="Download from Google Play">
+                                </a>
+                                <a href="#">
+                                    <img src="/images/apple-store-download.png" alt="Dowload from Apple Store">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+                <div class="hero__image-container">
+                    <img src="images/mobile-mockup.png" alt="Mobile App Mockup">
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="about__heading">
+                <h2 class="about__body-heading">About Our App</h2>
+                <p class="about__body-paragraph text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viverra nunc
+                    ante velit vitae. Est tellus
+                    vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper
+                    risus tempor, ac nunc libero urna, feugiat.</p>
+            </div>
+            <div class="about__body">
+                <div class="about__card-image">
+                    <img src="/images/about-mockup.png" alt="About section mockup image">
+                </div>
+                <div class="about__cards">
+                    <div class="about__card">
+                        <div>
+                            <img src="/images/checkbox-icon.png" alt="checkbox icon">
+                        </div>
+                        <div class="about__card-content">
+                            <h3 class="about__body-subheading">Creative design</h3>
+                            <p class="about__body-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Viverra nunc ante velit vitae.
+                                Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+                                ullamcorper velit.</p>
+                        </div>
+                    </div>
+                    <div class="about__card">
+                        <div>
+                            <img src="/images/checkbox-icon.png" alt="checkbox icon">
+                        </div>
+                        <div class="about__card-content">
+                            <h3 class="about__body-subheading">Easy to use</h3>
+                            <p class="about__body-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Viverra nunc ante velit vitae.
+                                Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+                                ullamcorper velit.</p>
+                        </div>
+                    </div>
+                    <div class="about__card">
+                        <div>
+                            <img src="/images/checkbox-icon.png" alt="checkbox icon">
+                        </div>
+                        <div class="about__card-content">
+                            <h3 class="about__body-subheading">Best user experience</h3>
+                            <p class="about__body-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Viverra nunc ante velit vitae.
+                                Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+                                ullamcorper velit.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="gradient features">
+            <div class="features__header">
+                <h2 class="features__heading">App Features</h2>
+                <p class="features__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                    nunc ante
+                    velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+                    ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+            </div>
+            <div class="features__chat">
+                <div>
+                    <img src="/images/chat-icon.png" alt="chat icon">
+                </div>
+                <h3 class="features__chat-heading">Full Free Chat</h3>
+                <p class="text-center features__chat-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="features__body">
+                <div class="features__body-left">
+                    <div class="feature">
+                        <div class="feature__img-container">
+                            <img src="/images/unlimited-features-icon.png" alt="unlimited features icon">
+                        </div>
+                        <h4 class="feature__title text-right">unlimited features</h4>
+                        <p class="feature__text text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature__img-container">
+                            <img src="/images/design-icon.png" alt="awesome design icon">
+                        </div>
+                        <h4 class="feature__title text-right">awesome ui design</h4>
+                        <p class="feature__text text-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+
+                </div>
+                <div class="features__body-image">
+                    <img src="/images/features-mockup.png" alt="app features mockup">
+                </div>
+                <div class="features__body-right">
+                    <div class="feature">
+                        <div class="feature__img-container">
+                            <img src="/images/mobile-icon.png" alt="mobile phone icon">
+                        </div>
+                        <h4 class="feature__title">ios & android version</h4>
+                        <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+
+
+                    <div class="feature">
+                        <div class="feature__img-container">
+                            <img src="/images/eye-scanner-icon.png" alt="eye scanner icon">
+                        </div>
+                        <h4 class="feature__title">retina ready graphics</h4>
+                        <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="features__chat">
+                <div>
+                    <img src="/images/support-icon.png" alt="support center icon">
+                </div>
+                <h3 class="features__chat-heading text-center">24/7 support by real people</h3>
+                <p class="text-center features__chat-text text-center">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</p>
+            </div>
+        </section>
+        <section class="interface">
+            <div class="interface__header">
+                <h2 class="interface__header-heading text-center">Checkout Our App Interface Look</h2>
+                <p class="interface__header-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Viverra nunc
+                    ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+                    ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+            </div>
+            <div class="hero__image-container scroll-width">
+                <div class="image__mockup">
+                    <img src="/images/mockup-1.png" alt="">
+                </div>
+                <img src="/images/interface-mockup.png" alt="interface mockup">
+                <div class="image__mockup">
+                    <img src="/images/mockup-2.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="download container">
+            <div class="download__content">
+                <h2 class="download__heading">Download App Now</h2>
+                <p class="download__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante
+                    velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+                    ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+                <div class="download__buttons">
+                    <a href="#">
+                        <img src="/images/google-play-download.png" alt="Download on Google Play Store">
+                    </a>
+                    <a href="#">
+                        <img src="/images/apple-store-download.png" alt="Download on Apple Store">
+                    </a>
+                </div>
+                <div class="download__cards">
+                    <div class="download__card">
+                        <div class="download__card-img">
+                            <img src="/images/download-icon.png" alt="Download Icon">
+                        </div>
+                        <p class="download__card-heading text-center">59865</p>
+                        <p class="download__card-text text-center">Download</p>
+                    </div>
+                    <div class="download__card">
+                        <div class="download__card-img">
+                            <img src="/images/like-icon.png" alt="Like Icon">
+                        </div>
+                        <p class="download__card-heading text-center">29852</p>
+                        <p class="download__card-text text-center">Like</p>
+                    </div>
+                    <div class="download__card">
+                        <div class="download__card-img">
+                            <img src="/images/star-icon.png" alt="Star Icon">
+                        </div>
+                        <p class="download__card-heading text-center">1500</p>
+                        <p class="download__card-text text-center">5 star rating</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="/images/download-mockup.png" alt="Download Mockup">
+            </div>
+        </section>
+        <section class="gradient">
+            <div class="usage container">
+                <div class="usage__header">
+                    <h2 class="usage__heading text-center">how to use the app perfectly</h2>
+                    <p class="usage__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                        nunc
+                        ante velit
+                        vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+                        ullamcorper
+                        velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="demo__container">
+                <img src="images/demo-video.png" alt="Demo Video image">
+            </div>
+        </section>
+        <section class="team container">
+            <div class="team__header">
+                <h2 class="team__heading text-center">Our team</h2>
+                <p class="team__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+                    ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+                    ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+            </div>
+            <div class="team__cards">
+                <div class="team__card">
+                    <div class="team__avatar">
+                        <img src="images/avatar-1.png" alt="avatar image">
+                    </div>
+                    <div class="title">
+                        <p class="title__heading text-center">Carla Press</p>
+                        <p class="title__text text-center">App Developer</p>
+                    </div>
+                    <p class="team__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                        nunc ante
+                        velit vitae. Est tellus vitae.</p>
+                    <div class="team__social">
+                        <div class="social__link team__social-border">
+                            <a href="#">
+                                <img src="/images/facebook-dark-icon.png" alt="Facebook Icon">
+                            </a>
+                        </div>
+                        <div class="social__link team__social-border">
+                            <a href="#">
+                                <img src="/images/instagram-dark-icon.png" alt="Instagram Icon">
+                            </a>
+                        </div>
+                        <div class="social__link team__social-border">
+                            <a href="#">
+                                <img src="/images/twitter-dark-icon.png" alt="Twitter Icon">
+                            </a>
+                        </div>
+                        <div class="social__link">
+                            <a href="#">
+                                <img src="/images/youtube-dark-icon.png" alt="Youtube Icon">
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="team__card">
+                    <div class="team__avatar">
+                        <img src="images/avatar-2.png" alt="avatar image">
+                    </div>
+                    <div class="title">
+                        <p class="text-center title__heading">Craig Gouse</p>
+                        <p class="title__text text-center">UI/UX Designer</p>
+                    </div>
+                    <p class="team__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                        nunc ante
+                        velit vitae. Est tellus vitae.</p>
+                    <div class="team__social">
+                        <div class="social__link team__social-border">
+                            <a href="#">
+                                <img src="/images/facebook-dark-icon.png" alt="Facebook Icon">
+                            </a>
+                        </div>
+                        <div class="social__link team__social-border">
+                            <a href="#">
+                                <img src="/images/instagram-dark-icon.png" alt="Instagram Icon">
+                            </a>
+                        </div>
+                        <div class="social__link team__social-border">
+                            <a href="#">
+                                <img src="/images/twitter-dark-icon.png" alt="Twitter Icon">
+                            </a>
+                        </div>
+                        <div class="social__link">
+                            <a href="#">
+                                <img src="/images/youtube-dark-icon.png" alt="Youtube Icon">
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="team__card">
+                    <div class="team__avatar">
+                        <img src="images/avatar-3.png" alt="avatar image">
+                    </div>
+                    <div class="title">
+                        <p class="title__heading text-center">Jocelyn Septimus</p>
+                        <p class="title__text text-center">Website developer</p>
+                    </div>
+                    <p class="team__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                        nunc ante
+                        velit vitae. Est tellus vitae.</p>
+                    <div class="team__social">
+                        <div class="social__link team__social-border">
+                            <a href="#">
+                                <img src="/images/facebook-dark-icon.png" alt="Facebook Icon">
+                            </a>
+                        </div>
+                        <div class="social__link team__social-border">
+                            <a href="#">
+                                <img src="/images/instagram-dark-icon.png" alt="Instagram Icon">
+                            </a>
+                        </div>
+                        <div class="social__link team__social-border">
+                            <a href="#">
+                                <img src="/images/twitter-dark-icon.png" alt="Twitter Icon">
+                            </a>
+                        </div>
+                        <div class="social__link">
+                            <a href="#">
+                                <img src="/images/youtube-dark-icon.png" alt="Youtube Icon">
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gradient">
+            <div class="container customers">
+                <div class="customers__header">
+                    <h2 class="customers__heading text-center">Our Happy Customers</h2>
+                    <p class="customers__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Viverra
+                        nunc ante
+                        velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+                        ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+
+                </div>
+                <div class="customers__carousel">
+                    <div class="customer__card active" id="customer-1">
+                        <div class="customer__avatar">
+                            <img src="/images/customer-avatar.png" alt="Customer Avatar">
+                        </div>
+                        <div class="customer__title">
+                            <p class="text-center customer__title-heading">Ann Lubin I</p>
+                            <p class="text-center customer__title-text">Co-Founder</p>
+                        </div>
+                        <p class="text-center customer__text">
+                            Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="customer__card" id="customer-2">
+                        <div class="customer__avatar">
+                            <img src="/images/customer-avatar.png" alt="Customer Avatar">
+                        </div>
+                        <div class="customer__title">
+                            <p class="text-center customer__title-heading">Ann Lubin II</p>
+                            <p class="text-center customer__title-text">Co-Founder</p>
+                        </div>
+                        <p class="text-center customer__text">
+                            Lorem ipsum dolor sit amet. </p>
+                    </div>
+                    <div class="customer__card" id="customer-3">
+                        <div class="customer__avatar">
+                            <img src="/images/customer-avatar.png" alt="Customer Avatar">
+                        </div>
+                        <div class="customer__title">
+                            <p class="text-center customer__title-heading">Ann Lubin III</p>
+                            <p class="text-center customer__title-text">Co-Founder</p>
+                        </div>
+                        <p class="text-center customer__text">
+                            Lorem ipsum dolor sit amet.
+                            tellus vitae. </p>
+                    </div>
+                </div>
+                <div class="carousel__buttons">
+                    <button class="carousel__button" onclick="changeActiveItem('customer-1')" />
+                    <button class="carousel__button" onclick="changeActiveItem('customer-2')" />
+                    <button class="carousel__button" onclick="changeActiveItem('customer-3')" />
+                </div>
+            </div>
+
+            </div>
+        </section>
+        <section class="blogs container">
+            <div class="blogs__header">
+                <h2 class="text-center blogs__heading">Our recent blog</h2>
+                <p class="text-center blogs__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+                    ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus,
+                    ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat.</p>
+            </div>
+            <div class="blogs__container">
+                <div class="blog">
+                    <div class="blog__image">
+                        <img src="/images/blog-image-1.png" alt="blog preview image">
+                    </div>
+                    <div class="blog__content">
+                        <p class="blog__title">The Snap Pixel: How It Works and How to Install</p>
+                        <p class="blog__summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+                            ante
+                            velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+                        <a href="#" class="blog__link">Read more</a>
+
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="blog__image">
+                        <img src="/images/blog-image-2.png" alt="blog preview image">
+                    </div>
+                    <div class="blog__content">
+                        <p class="blog__title">Global Partner Solutions: A Partnership of Innovation</p>
+                        <p class="blog__summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+                            ante
+                            velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+                        <a href="#" class="blog__link">Read more</a>
+
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="blog__image">
+                        <img src="/images/blog-image-3.png" alt="blog preview image">
+                    </div>
+                    <div class="blog__content">
+                        <p class="blog__title">2021: An opportunity for Snapchatters to start fresh</p>
+                        <p class="blog__summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc
+                            ante
+                            velit vitae. Est tellus vitae, nullam lobortis enim.</p>
+                        <a href="#" class="blog__link">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="contact__card">
+                    <div class="contact__detail contact__detail-border">
+                        <div class="icon__container">
+                            <img src="/images/mail-medium-icon.png" alt="Mail Icon">
+                        </div>
+                        <p class="contact__detail-text">info@youremail.com</p>
+                    </div>
+                    <div class="separator__container">
+                        <div class="separator"></div>
+                    </div>
+                    <div class="contact__detail">
+                        <div class="icon__container">
+                            <img src="/images/phone-medium-icon.png" alt="Phone Icon">
+                        </div>
+                        <p class="contact__detail-text">+880 321 655 9985</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__groups container">
+            <div class="footer__group">
+                <h3 class="logo__text">Logo</h3>
+                <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante
+                    velit
+                    vitae. Est tellus vitae, nullam lobortis enim.</p>
+                <div class="footer__contact">
+                    <a href="#" class="footer__contact-border">
+                        <img src="/images/facebook-icon.png" alt="Facebook Icon">
+                    </a>
+                    <a href="#" class="footer__contact-border">
+                        <img src="/images/instagram-icon.png" alt="Instagram Icon">
+                    </a>
+                    <a href="#" class="footer__contact-border">
+                        <img src="/images/twitter-icon.png" alt="Twitter icon">
+                    </a>
+                    <a href="#">
+                        <img src="/images/youtube-icon.png" alt="Youtube Icon">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__group">
+                <h3 class="footer__heading">
+                    quick link
+                </h3>
+                <nav class="footer__navigation">
+                    <a href="#" class="footer__text">
+                        About
+                    </a>
+                    <a href="#" class="footer__text">
+                        Features
+                    </a>
+                    <a href="#" class="footer__text">
+                        Screenshot
+                    </a>
+                    <a href="#" class="footer__text">
+                        Blog
+                    </a>
+                </nav>
+            </div>
+            <div class="footer__group">
+                <h3 class="footer__heading">Newsletter</h3>
+                <p class="footer__text">Subscribe our newsletter to get our latest
+                    update & news</p>
+                <form class="footer__form">
+                    <input type="text" class="footer__input" placeholder="Your email address" />
+                    <button type="submit" class="footer__submit">
+                        <img src="/images/send-icon.png" alt="send icon">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="text-center">&copy; Copyright 2021 .Ojjomedia. All Right Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
